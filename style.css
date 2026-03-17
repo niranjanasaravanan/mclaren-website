@@ -1,271 +1,356 @@
-.main1
-    {
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(to right,darkgrey,black);
-        position: relative;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-        height: 100%;       
-      
-    }
-    .sub11
-    {
-        transform: scale(0.1);
-       opacity:0;
-        z-index: 1;
-        width:90vw;
-        height: 70vh;    
-        left:5vw;
-        position: absolute;
-        top:30vh;
-        transition: all 1s ease-in-out;
-      
+/* 🚫 STOP HORIZONTAL SCROLL */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
+body {
+    height: 100%;
+}
 
-    }
-    
-    .main1:hover .sub11
-    {
-        transform: scale(1.0);
-        opacity: 1;
-    }
-    .sub11 img{
-         width:90vw;
-        height: 60vh;
-    }
-    .sub12
-    {
-        
-        width: 80vw;
-        height: 40vh;     
-        font-size: 150px;
-        position: absolute;
-        left: 10vw;
-        top: 5vh;
-        text-align: center;
-        color:gray;
-    }
-    .sub12 h1{
-        margin: 0;
-    }
-    span{
-        color: rgb(255, 111, 0);
-    }
-    .sub13
-    {
-        
-        font-size: x-large;
-        color: burlywood;
-        position: absolute;
-        top: 50px;
-        right: 100px;
-    }
-    .sub13 td{
-        padding-left: 50px;
-    }
-    .sub14
-    {
-        position: absolute;
-        top: 0px;
-        left:50px;
-        
-    }
-    .sub14 img{
-        width: 100px;
-    }
-    .main12
-    {
-      
-        width: 100%;
-        height: 100vh;
-        position: relative;
-         
-        overflow: hidden;
-      
-        
-    }
-    #main12_img
-    {
-        width:100%;
-        height:100vh;
-        object-fit: cover;
-        
-    }
-    .sub21{
-        width: 20vw;
-        height: 50vh;   
-        position: absolute;
-        top: 25vh;
-        left: 2vw;
-        font-size: 100px;
-        color: aliceblue;
-        opacity:0;
-        transition: all 1s ease-in;
-        
+/* MAIN HERO SECTION */
+.main1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, darkgrey, black);
+    position: relative;
+}
 
-    }
-    .main12:hover .sub21{
-        opacity: 1;
-    }
-    .sub22
-    {
-        width: 100%;
-        height: 100vh;
-        background-color: black;
-        position: absolute;
-        top: 0vh;
-        left:100vw;
-        transition: all 1s ease-in;
-    }
-    .main12:hover .sub22{
-        left:0vw;
-        transition-delay: 2s;
+.sub11 {
+    transform: scale(0.1);
+    opacity: 0;
+    z-index: 1;
+    width: 90vw;
+    height: 70vh;
+    left: 5vw;
+    position: absolute;
+    top: 30vh;
+    transition: all 1s ease-in-out;
+}
 
-    }
-    .sub23
-    {
-        width: 40vw;
-        height: 40vh;
-        background-color: black;
-        position: absolute;
-        top: 20vh;
-        left: 5vw;
-        font-size: x-large;
-        color: aliceblue;
-        text-align: center;
-        opacity: 0;
-        transition: all 1s ease-in;
-    }
-    .main12:hover .sub23{
-        opacity: 1;
-        transition-delay: 3s;
-    }
-    .box
-    {     
-        width:35vw;
-        height:100vh;   
-    }
-    .box:hover 
-    {
-        z-index: 2;
-    }
-    .sub24
-    {
-        
-        position:absolute;
-        right:8vw;
-        top:5vh; 
-        border-radius: 15px;
-        opacity: 0;
-        transition: 0.5s ease-in;
-       
-    }
-    .sub25
-    {
-        position:absolute;
-        right:8vw;
-        top:25vh; 
-        border-radius: 15px;
-        z-index: 1;
-        opacity: 0;
-        transition: 0.5s ease-in;
+.main1:hover .sub11 {
+    transform: scale(1);
+    opacity: 1;
+}
 
-       
-    }
-    .sub26
-    {
-        position:absolute;
-        right:8vw;
-        top:45vh; 
-        border-radius: 15px;
-        opacity: 0;
-        transition: 0.5s ease-in;
+.sub11 img {
+    width: 90vw;
+    height: 60vh;
+}
 
-    }
-    .box img{
-        width:35vw;
-        height:40vh;
-        border:3px silver solid;
-        border-radius: 30px;
-    }
-    .main12:hover .sub24
-    {
-        opacity: 1;
-        transition-delay: 3.5s;
-        top: 9vh;
-    }
-    .main12:hover .sub25
-    {
-        opacity: 1;
-        transition-delay: 4s;
-        top: 30vh;
-    }
-    .main12:hover .sub26
-    {
-        opacity: 1;
-        transition-delay: 4.5s;
-        top: 50vh;
-    }
-    .M2_img
-    {
-        position: absolute;
-        right: 5vw;
-        transition: all 0.5s ease-in-out;
-    }
-    .M2_img:hover{
-        transform: scale(1.1);
-        right: 10vw;
-    }
+.sub12 {
+    width: 80vw;
+    height: 40vh;
+    font-size: 150px;
+    position: absolute;
+    left: 10vw;
+    top: 5vh;
+    text-align: center;
+    color: gray;
+    margin: 0;
+}
 
-    /* 📱 Mobile Responsive */
+.sub12 h1 {
+    margin: 0;
+}
+
+span {
+    color: rgb(255, 111, 0);
+}
+
+.sub14 {
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.sub14 img {
+    width: 100px;
+}
+
+/* SECOND SECTION */
+.main12 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#main12_img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.sub21 {
+    width: 20vw;
+    height: 50vh;
+    position: absolute;
+    top: 25vh;
+    left: 2vw;
+    font-size: 100px;
+    color: aliceblue;
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.main12:hover .sub21 {
+    opacity: 1;
+}
+
+.sub22 {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    transition: all 1s ease-in;
+}
+
+.main12:hover .sub22 {
+    left: 0;
+    transition-delay: 2s;
+}
+
+.sub23 {
+    width: 40vw;
+    height: 40vh;
+    background-color: black;
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    font-size: x-large;
+    color: aliceblue;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.main12:hover .sub23 {
+    opacity: 1;
+    transition-delay: 3s;
+}
+
+.box {
+    width: 35vw;
+    height: 100vh;
+}
+
+.box:hover {
+    z-index: 2;
+}
+
+.sub24,
+.sub25,
+.sub26 {
+    position: absolute;
+    right: 8vw;
+    border-radius: 15px;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+
+.sub24 {
+    top: 5vh;
+}
+
+.sub25 {
+    top: 25vh;
+    z-index: 1;
+}
+
+.sub26 {
+    top: 45vh;
+}
+
+.box img {
+    width: 35vw;
+    height: 40vh;
+    border: 3px silver solid;
+    border-radius: 30px;
+}
+
+.main12:hover .sub24 {
+    opacity: 1;
+    transition-delay: 3.5s;
+    top: 9vh;
+}
+
+.main12:hover .sub25 {
+    opacity: 1;
+    transition-delay: 4s;
+    top: 30vh;
+}
+
+.main12:hover .sub26 {
+    opacity: 1;
+    transition-delay: 4.5s;
+    top: 50vh;
+}
+
+.M2_img {
+    position: absolute;
+    right: 5vw;
+    transition: all 0.5s ease-in-out;
+}
+
+.M2_img:hover {
+    transform: scale(1.1);
+    right: 10vw;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: rgba(92, 49, 0, 0.664);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #7b2ff7;
+}
+
+.navbar a.active {
+    background: #f107a3;
+}
+
+/* MODELS SECTION */
+#models {
+    min-height: 100vh;
+    background-color: bisque;
+    padding: 40px 20px;
+}
+
+.model-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.model-card img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.model-card h2 {
+    margin: 0;
+}
+
+/* OTHER SECTIONS STYLES (BOOKING, RACING, EXPLORE, LOGIN) */
+/* ... Your other styles unchanged, omitted here for brevity ... */
+
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
-    /* Main section */
-    .sub12 {
-        font-size: 50px;
-        top: 10vh;
-        left: 5vw;
-        width: 90vw;
+    body {
+        overflow-x: hidden;
     }
 
+    /* Fix white space on models page */
+    #models > div {
+        padding-left: 0 !important;
+        margin: 20px auto;
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* HERO SECTION */
+    .main1 {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .sub12 {
+        font-size: 40px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .sub11 {
+        position: static;
+        transform: scale(1);
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .sub11 img {
+        width: 100%;
+        height: auto;
+    }
 
     .sub14 img {
         width: 60px;
     }
 
-    .sub11 img {
+    /* SECOND SECTION */
+    .main12 {
         height: auto;
-        width: 100%;
     }
 
-    /* Second section */
+    #main2_img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
     .sub21 {
-        font-size: 40px;
-        width: 90vw;
-        left: 5vw;
-        top: 15vh;
+        position: static;
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        opacity: 1;
+    }
+
+    .sub22 {
+        display: none;
     }
 
     .sub23 {
-        width: 90vw;
-        left: 5vw;
-        font-size: 16px;
-        top: 35vh;
-    }
-
-    .sub23 h1 {
-        font-size: 24px;
-    }
-
-    /* Images stack (important change 🔥) */
-    .sub24, .sub25, .sub26 {
         position: static;
-        width: 90vw;
-        margin: 10px auto;
-        opacity: 1; /* always visible on mobile */
+        width: 90%;
+        margin: 20px auto;
+        font-size: 16px;
+        opacity: 1;
+    }
+
+    .sub24,
+    .sub25,
+    .sub26 {
+        position: static;
+        width: 90%;
+        margin: 15px auto;
+        opacity: 1;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
     }
 
     .box img {
@@ -273,7 +358,6 @@
         height: auto;
     }
 
-    /* Remove hover dependency (mobile doesn't support hover properly) */
     .main12:hover .sub24,
     .main12:hover .sub25,
     .main12:hover .sub26 {
@@ -285,9 +369,26 @@
         right: 0;
     }
 
-    /* Fix background image */
-    #main2_img {
-        object-fit: cover;
+    /* NAVBAR FIX */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* MODELS SECTION MOBILE */
+    .model-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .model-card img {
+        width: 100%;
     }
 }
 .booking-container {
@@ -467,177 +568,3 @@ section {
     top: 0;
     z-index: 1000;
 }
-
-/* MODELS SECTION */
-#models {
-    min-height: 100vh;
-    background-color: bisque;
-    padding: 40px 20px;
-}
-
-/* CARD STYLE */
-.model-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 30px;
-}
-
-/* IMAGE */
-.model-card img {
-    width: 250px;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* TEXT */
-.model-card h2 {
-    margin: 0;
-}
-
-/* 🔥 MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-    .model-card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .model-card img {
-        width: 100%;
-    }
-}
-
-/* Links */
-.navbar a {
-    text-decoration: none;
-    color: white;
-
-    font-size: 18px;
-    padding: 8px 15px;
-    border-radius: 20px;
-
-    transition: 0.3s;
-}
-
-/* Hover effect */
-.navbar a:hover {
-    background: #7b2ff7;
-}
-
-/* Active page highlight */
-.navbar a.active {
-    background: #f107a3;
-}
-/* 📱 FULL MOBILE FIX (NO HTML CHANGE) */
-@media (max-width: 768px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
-    /* HERO SECTION */
-    .main1 {
-        height: auto;
-        padding-bottom: 20px;
-    }
-
-    .sub12 {
-        font-size: 40px;
-        width: 100%;
-        left: 0;
-        text-align: center;
-    }
-
-    .sub11 {
-        position: static;
-        transform: scale(1);
-        opacity: 1;
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-    }
-
-    .sub11 img {
-        width: 100%;
-        height: auto;
-    }
-
-    .sub14 img {
-        width: 60px;
-    }
-
-    /* SECOND SECTION */
-    .main12 {
-        height: auto;
-    }
-
-    #main2_img {
-        width: 100%;
-        height: 50vh;
-        object-fit: cover;
-    }
-
-    .sub21 {
-        position: static;
-        font-size: 35px;
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-        opacity: 1;
-    }
-
-    .sub22 {
-        display: none; /* remove overlay */
-    }
-
-    .sub23 {
-        position: static;
-        width: 90%;
-        margin: 20px auto;
-        font-size: 16px;
-        opacity: 1;
-    }
-
-    /* 🔥 MAIN FIX — REMOVE ABSOLUTE STACK */
-    .sub24, .sub25, .sub26 {
-        position: static;
-        width: 90%;
-        margin: 15px auto;
-        opacity: 1;
-    }
-
-    .box {
-        width: 100%;
-        height: auto;
-    }
-
-    .box img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* REMOVE HOVER DEPENDENCY */
-    .main12:hover .sub24,
-    .main12:hover .sub25,
-    .main12:hover .sub26 {
-        top: 0;
-    }
-
-    .M2_img:hover {
-        transform: none;
-        right: 0;
-    }
-
-    /* NAVBAR FIX */
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .navbar a {
-        width: 90%;
-        text-align: center;
-    }
-}
-
