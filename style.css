@@ -606,3 +606,65 @@ section {
         box-sizing: border-box;
     }
 }
+/* 🔥 FULL MOBILE FIX: REMOVE WHITE SPACE */
+@media (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .main1, .main12, #models {
+        width: 100vw;
+        max-width: 100vw;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* Force absolute elements to stay inside screen */
+    .sub11, .sub12, .sub21, .sub23, .sub24, .sub25, .sub26 {
+        position: static !important; /* stack vertically */
+        width: 90vw;
+        max-width: 90vw;
+        margin: 10px auto;
+        left: 0 !important;
+        right: 0 !important;
+    }
+
+    /* Images fit parent */
+    .sub11 img, .sub24 img, .sub25 img, .sub26 img, #main2_img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .box {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Navbar stack */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar a {
+        width: 90%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Remove any remaining paddings that overflow */
+    section {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        box-sizing: border-box;
+    }
+
+}
