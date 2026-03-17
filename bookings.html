@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="models.html" >Models</a>
+    <a href="bookings.html "class="active">Bookings</a>
+    <a href="racing.html">Racing</a>
+    <a href="explore.html">Explore</a>
+    <a href="login.html">Login</a>
+</div>
+
+<section id="bookings" style="color:rgb(8, 7, 7); padding:40px;">
+    <h1>Book Your Ride</h1>
+
+    <div class="booking-container">
+
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+
+        <select>
+            <option>Select Model</option>
+            <option>McLaren 720S</option>
+            <option>McLaren P1</option>
+            <option>McLaren Artura</option>
+        </select>
+
+        <input type="date">
+
+        <button onclick="bookNow()">Book Now 🚗</button>
+
+    </div>
+</section>
+
+<script src="script.js"></script>

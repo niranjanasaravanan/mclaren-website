@@ -1,0 +1,501 @@
+.main1
+    {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to right,darkgrey,black);
+        position: relative;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100%;       
+      
+    }
+    .sub11
+    {
+        transform: scale(0.1);
+       opacity:0;
+        z-index: 1;
+        width:90vw;
+        height: 70vh;    
+        left:5vw;
+        position: absolute;
+        top:30vh;
+        transition: all 1s ease-in-out;
+      
+
+
+    }
+    
+    .main1:hover .sub11
+    {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+    .sub11 img{
+         width:90vw;
+        height: 60vh;
+    }
+    .sub12
+    {
+        
+        width: 80vw;
+        height: 40vh;     
+        font-size: 150px;
+        position: absolute;
+        left: 10vw;
+        top: 5vh;
+        text-align: center;
+        color:gray;
+    }
+    .sub12 h1{
+        margin: 0;
+    }
+    span{
+        color: rgb(255, 111, 0);
+    }
+    .sub13
+    {
+        
+        font-size: x-large;
+        color: burlywood;
+        position: absolute;
+        top: 50px;
+        right: 100px;
+    }
+    .sub13 td{
+        padding-left: 50px;
+    }
+    .sub14
+    {
+        position: absolute;
+        top: 0px;
+        left:50px;
+        
+    }
+    .sub14 img{
+        width: 100px;
+    }
+    .main12
+    {
+      
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+         
+        overflow: hidden;
+      
+        
+    }
+    #main12_img
+    {
+        width:100vw;
+        height:100vh;
+        object-fit: cover;
+        
+    }
+    .sub21{
+        width: 20vw;
+        height: 50vh;   
+        position: absolute;
+        top: 25vh;
+        left: 2vw;
+        font-size: 100px;
+        color: aliceblue;
+        opacity:0;
+        transition: all 1s ease-in;
+        
+
+    }
+    .main12:hover .sub21{
+        opacity: 1;
+    }
+    .sub22
+    {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        position: absolute;
+        top: 0vh;
+        left:100vw;
+        transition: all 1s ease-in;
+    }
+    .main12:hover .sub22{
+        left:0vw;
+        transition-delay: 2s;
+
+    }
+    .sub23
+    {
+        width: 40vw;
+        height: 40vh;
+        background-color: black;
+        position: absolute;
+        top: 20vh;
+        left: 5vw;
+        font-size: x-large;
+        color: aliceblue;
+        text-align: center;
+        opacity: 0;
+        transition: all 1s ease-in;
+    }
+    .main12:hover .sub23{
+        opacity: 1;
+        transition-delay: 3s;
+    }
+    .box
+    {     
+        width:35vw;
+        height:100vh;   
+    }
+    .box:hover 
+    {
+        z-index: 2;
+    }
+    .sub24
+    {
+        
+        position:absolute;
+        right:8vw;
+        top:5vh; 
+        border-radius: 15px;
+        opacity: 0;
+        transition: 0.5s ease-in;
+       
+    }
+    .sub25
+    {
+        position:absolute;
+        right:8vw;
+        top:25vh; 
+        border-radius: 15px;
+        z-index: 1;
+        opacity: 0;
+        transition: 0.5s ease-in;
+
+       
+    }
+    .sub26
+    {
+        position:absolute;
+        right:8vw;
+        top:45vh; 
+        border-radius: 15px;
+        opacity: 0;
+        transition: 0.5s ease-in;
+
+    }
+    .box img{
+        width:35vw;
+        height:40vh;
+        border:3px silver solid;
+        border-radius: 30px;
+    }
+    .main12:hover .sub24
+    {
+        opacity: 1;
+        transition-delay: 3.5s;
+        top: 9vh;
+    }
+    .main12:hover .sub25
+    {
+        opacity: 1;
+        transition-delay: 4s;
+        top: 30vh;
+    }
+    .main12:hover .sub26
+    {
+        opacity: 1;
+        transition-delay: 4.5s;
+        top: 50vh;
+    }
+    .M2_img
+    {
+        position: absolute;
+        right: 5vw;
+        transition: all 0.5s ease-in-out;
+    }
+    .M2_img:hover{
+        transform: scale(1.1);
+        right: 10vw;
+    }
+
+    /* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+
+    /* Main section */
+    .sub12 {
+        font-size: 50px;
+        top: 10vh;
+        left: 5vw;
+        width: 90vw;
+    }
+
+    .sub13 {
+        font-size: 14px;
+        right: 10px;
+        top: 10px;
+    }
+
+    .sub13 td {
+        padding-left: 15px;
+    }
+
+    .sub14 img {
+        width: 60px;
+    }
+
+    .sub11 img {
+        height: auto;
+        width: 100%;
+    }
+
+    /* Second section */
+    .sub21 {
+        font-size: 40px;
+        width: 90vw;
+        left: 5vw;
+        top: 15vh;
+    }
+
+    .sub23 {
+        width: 90vw;
+        left: 5vw;
+        font-size: 16px;
+        top: 35vh;
+    }
+
+    .sub23 h1 {
+        font-size: 24px;
+    }
+
+    /* Images stack (important change 🔥) */
+    .sub24, .sub25, .sub26 {
+        position: static;
+        width: 90vw;
+        margin: 10px auto;
+        opacity: 1; /* always visible on mobile */
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Remove hover dependency (mobile doesn't support hover properly) */
+    .main12:hover .sub24,
+    .main12:hover .sub25,
+    .main12:hover .sub26 {
+        top: 0;
+    }
+
+    .M2_img:hover {
+        transform: none;
+        right: 0;
+    }
+
+    /* Fix background image */
+    #main2_img {
+        object-fit: cover;
+    }
+}
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+}
+
+.booking-container input,
+.booking-container select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.booking-container button {
+    padding: 10px;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-container button:hover {
+    background: darkorange;
+}
+
+#bookings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;     /* horizontal center */
+    height: 100vh;
+}
+
+#bookings h1 {
+    text-align: center;
+}
+#racing {
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.race-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.race-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.race-card:hover {
+    transform: translateY(-10px);
+}
+
+#explore {
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.explore-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.explore-card {
+    background: linear-gradient(135deg, orange, red);
+    padding: 25px;
+    border-radius: 15px;
+    width: 220px;
+    transition: 0.3s;
+}
+
+.explore-card:hover {
+    transform: scale(1.05);
+}
+
+section {
+    min-height: 100vh;   /* full screen height */
+    padding: 60px 40px;
+}
+
+#racing {
+    margin-bottom: 50px;
+}
+
+/* Section full center */
+#login {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, #7b2ff7, #f107a3);
+    font-family: Arial, sans-serif;
+}
+
+/* Title */
+#login h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Login box */
+.login-container {
+    width: 350px;
+    padding: 30px;
+    border-radius: 30px;
+
+    background: linear-gradient(145deg, #8a2be2, #6a0dad);
+
+    box-shadow: 
+        10px 10px 25px rgba(0,0,0,0.6),
+        -5px -5px 15px rgba(255,255,255,0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Inputs */
+.login-container input {
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+
+    background: #ddd;
+    font-size: 14px;
+}
+
+/* Button */
+.login-container button {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+
+    background: black;
+    color: white;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.login-container button:hover {
+    background: #333;
+}
+
+
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    background: rgba(92, 49, 0, 0.664);
+    padding: 15px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Links */
+.navbar a {
+    text-decoration: none;
+    color: white;
+
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background: #7b2ff7;
+}
+
+/* Active page highlight */
+.navbar a.active {
+    background: #f107a3;
+}
+
